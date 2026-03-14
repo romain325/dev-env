@@ -36,11 +36,11 @@
     "dots": {
       "flake": false,
       "locked": {
-        "lastModified": 1773525469,
-        "narHash": "sha256-qfpztf89CfID7vsAKLsEUawbD8ejK27+iJMe++qhrhg=",
+        "lastModified": 1773529323,
+        "narHash": "sha256-dN8PTQQbTC8glgjgwKzhxXHNq9fTLtJqRIMU2pEybgQ=",
         "owner": "romain325",
         "repo": "dots",
-        "rev": "371bc53f8b3c60095b40abcdb5e8147a1a6b11e7",
+        "rev": "5529244ebde4c62b6cb8f3c67f7539fe57552997",
         "type": "github"
       },
       "original": {

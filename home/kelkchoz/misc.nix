@@ -1,10 +1,11 @@
 { pkgs, ... }:
 
 {
-
-  home.packages = with pkgs; [ 
+  home.packages = with pkgs; [
+    libnotify
     firefox
-    nerd-fonts.fira-code 
+    yazi
+    nerd-fonts.fira-code
+    mise
   ];
-
 }
