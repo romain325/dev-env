@@ -6,9 +6,7 @@
     package = null;
     portalPackage = null;
     settings = {
-      debug = {
-        disable_logs = false;
-      };
+      debug = { disable_logs = false; };
       "exec-once" = [
         "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
       ];
@@ -22,7 +20,7 @@
   home.file.".config/rofi".source = "${inputs.dots.outPath}/rofi";
   home.file.".config/kitty".source = "${inputs.dots.outPath}/kitty";
   home.file.".config/wallpapers".source = "${inputs.dots.outPath}/wallpapers";
-  
+
   home.sessionVariables.NIXOS_OZONE_WL = "1";
   home.sessionVariables.LIBGL_ALWAYS_SOFTWARE = "1";
 
@@ -33,7 +31,7 @@
     swaybg
     waybar
     dunst
-    rofi
+    rofi-wayland
   ];
 
 }
