@@ -10,6 +10,7 @@
       "exec-once" = [
         "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
       ];
+      "monitor" = "Virtual-, 1920x1080, 0x0, 1";
     };
     systemd.enable = false;
   };
@@ -26,6 +27,7 @@
 
   home.packages = with pkgs; [
     hyprlock
+    inputs.hyprls.packages.${pkgs.stdenv.hostPlatform.system}.default
     wl-clipboard
     cliphist
     swaybg

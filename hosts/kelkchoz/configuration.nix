@@ -1,10 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  imports = [
-    ./hardware-configuration.nix
-    ./vmware.nix
-  ];
+  imports = [ ./hardware-configuration.nix ./vmware.nix ];
 
   networking.hostName = "kelkchoz";
   networking.networkmanager.enable = true;
@@ -47,26 +44,28 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
-     curl
-     git
-     neovim
-     mesa
-     mesa-demos
-     vulkan-tools
-     wayland
-     gcc
-     gnumake
+    curl
+    git
+    neovim
+    mesa
+    mesa-demos
+    vulkan-tools
+    wayland
+    gcc
+    gnumake
   ];
 
   services.openssh = {
     enable = true;
     settings.PasswordAuthentication = false;
   };
-  
+
   services.xserver.enable = true;
   programs.hyprland.enable = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  programs.nix-ld.enable = true;
 
   system.stateVersion = "25.05";
 }

@@ -7,5 +7,13 @@
     yazi
     nerd-fonts.fira-code
     mise
+    zip
+    unzip
+    jq
+    yq
+    python3
+    nodejs
+    cargo
+    rustc
   ];
 }
